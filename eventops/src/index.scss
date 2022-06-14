@@ -1,0 +1,47 @@
+// Override default variables before the import
+$primary: #9f2d30;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-icons/font/bootstrap-icons.scss';
+
+body {
+  background-color: #21262a;
+  color: white;
+  margin: 0;
+}
+
+.eventops {
+  min-height: 100vh;
+  @at-root #{&}__header {
+    background-color: #21262a;
+  }
+  @at-root #{&}__title {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.5rem;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  @at-root #{&}__search-input {
+    width: auto;
+  }
+
+  @at-root #{&}__title:hover {
+    color: white;
+  }
+}
+
+.filter-search:focus {
+  box-shadow: 0 0 0 0 rgb(159 45 48 / 25%);
+}
+
+.price-dropdown,
+.category-dropdown,
+.date-dropdown {
+  min-width: 20rem;
+}

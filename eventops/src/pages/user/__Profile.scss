@@ -1,0 +1,56 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css';
+
+.footer{
+    margin-top:0px;
+  }
+  .col-left{
+    margin: 0;
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: left;
+    background-color: #c4c4c4;
+    img{
+      width: 90px;
+      height: 90px;
+    }
+    .mi-perfil{
+      border-right: 7px solid #9F2D30;
+    }
+    .fila1-1{
+      display:flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+    }
+    
+  }
+  .col-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    img{
+      width: 200px;
+      height: 180px;
+    }
+      button{
+        background-color: #9F2D30;
+        border:none;
+        border-radius: 25px;
+        margin-top:20px;
+      }
+  }
+  .col-md-6{
+    margin-top:20px;
+  }
+  .col-mid{
+    .boton-actualizar{
+      display: flex;
+      justify-content: center;      
+    }
+    input::placeholder{
+      color:white;
+    }
+  }
